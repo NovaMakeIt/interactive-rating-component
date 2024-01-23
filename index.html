@@ -16,7 +16,7 @@
 <body>
 
   <!-- Rating state start -->
-<div class="rating-card">
+<div class="rating-card" id="rating-card">
   <div class="content-rating-card">
     <div class="icon-star"><img src="./images/icon-star.svg"></div>
 
@@ -25,30 +25,23 @@
     <p>Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!</p>
 
-    <div class="button-rating-all">
-      <button class="button-rating">1</button>
-      <button class="button-rating">2</button>
-      <button class="button-rating">3</button>
-      <button class="button-rating">4</button>
-      <button class="button-rating">5</button>
+    <div class="button-rating-all" id="buttonratingall">
+      <button class="button-rating" id="buttonrating" value="1">1</button>
+      <button class="button-rating" id="buttonrating" value="2">2</button>
+      <button class="button-rating" id="buttonrating" value="3">3</button>
+      <button class="button-rating" id="buttonrating" value="4">4</button>
+      <button class="button-rating" id="buttonrating" value="5">5</button>
     </div>
 
-    <button class="submit-rating">SUBMIT</button>
+    <button class="submit-rating" id="submit">SUBMIT</button>
   </div>
 </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
   <!-- Thank you state end -->
 
-
+<script src="./script.js"></script>
 </body>
 </html>
