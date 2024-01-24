@@ -66,6 +66,11 @@ p{
     cursor: pointer;
 }
 
+.button-rating:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
 .submit-rating {
     width: 345px;
     height: 45px;

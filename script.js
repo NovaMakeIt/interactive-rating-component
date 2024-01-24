@@ -1,15 +1,27 @@
-// Get all buttons with class "button-rating"
 let ratingButtons = document.querySelectorAll('.button-rating');
 const submit = document.getElementById('submit');
 let buttonValue;
-
+let selectedButton;
 
 // Add a click event listener to each button
 ratingButtons.forEach(function(button) {
   button.addEventListener('click', function() {
     // Get the value of the clicked button
+    
     buttonValue = button.value;
     console.log('Button Value:', buttonValue);
+
+    // Remove the background color from the previously selected button, if any
+    if (selectedButton) {
+        selectedButton.style.backgroundColor = ''; // Set to default or any desired color
+      }
+  
+      // Set the background color of the clicked button
+      button.style.backgroundColor = 'hsl(25, 97%, 53%)'; // Replace 'your-desired-color' with the color you want
+      button.style.color = 'hsl(0, 0%, 100%)';
+  
+      // Update the selected button
+      selectedButton = button;
   });
 
 });
